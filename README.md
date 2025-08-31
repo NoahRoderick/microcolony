@@ -11,9 +11,11 @@ One-screen Mars dome survival built with **Godot 4 (.NET/C#)**. Keep O₂ / H₂
 - Esc: pause / menu
 
 ## 🗂 Project Layout
+
 - `assets/` sprites, audio, fonts
 - `scenes/` main_menu.tscn, game.tscn, ui_hud.tscn
 - `scripts/` C# scripts (Game, Colonist, Building, UIHUD)
 - `ui/` HUD scenes and styles
 - `data/` balance.csv + balance.json
 - `docs/` project docs and changelog
+
