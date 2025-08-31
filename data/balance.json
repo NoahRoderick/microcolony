@@ -1,0 +1,9 @@
+{
+  "colonist_o2": -1,
+  "colonist_h2o": -1,
+  "solar_power": 5,
+  "recycler_h2o": 3,
+  "hydroponics_o2": 4,
+  "recycler_power_cost": 2,
+  "hydroponics_power_cost": 2
+}

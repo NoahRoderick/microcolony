@@ -1,0 +1,34 @@
+[gd_scene load_steps=2 format=4]
+
+[ext_resource path="res://scripts/UIHUD.cs" type="Script" id=1]
+
+[node name="UIHUD" type="Control"]
+script = ExtResource(1)
+O2Bar = NodePath("O2Bar")
+H2OBar = NodePath("H2OBar")
+PowerBar = NodePath("PowerBar")
+TimerLabel = NodePath("TimerLabel")
+RestartButton = NodePath("RestartButton")
+SolarButton = NodePath("SolarButton")
+RecyclerButton = NodePath("RecyclerButton")
+HydroponicsButton = NodePath("HydroponicsButton")
+
+[node name="O2Bar" type="ProgressBar" parent="."]
+[node name="H2OBar" type="ProgressBar" parent="."]
+[node name="PowerBar" type="ProgressBar" parent="."]
+[node name="TimerLabel" type="Label" parent="."]
+[node name="RestartButton" type="Button" parent="."]
+text = "Restart"
+visible = false
+[node name="SolarButton" type="Button" parent="."]
+text = "Solar"
+toggle_mode = true
+pressed = true
+[node name="RecyclerButton" type="Button" parent="."]
+text = "Recycler"
+toggle_mode = true
+pressed = true
+[node name="HydroponicsButton" type="Button" parent="."]
+text = "Hydroponics"
+toggle_mode = true
+pressed = true
