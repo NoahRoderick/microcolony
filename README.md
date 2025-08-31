@@ -11,3 +11,4 @@ One-screen Mars dome survival built with **Godot 4 (.NET/C#)**. Keep O₂ / H₂
 - Esc: pause / menu
 
 ## 🗂 Project Layout
+TBD
