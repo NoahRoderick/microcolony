@@ -1,27 +1,28 @@
-[gd_scene load_steps=4 format=4]
+[gd_scene load_steps=4 format=3 uid="uid://ccoogqshc0slo"]
 
-[ext_resource path="res://scripts/Game.cs" type="Script" id=1]
-[ext_resource path="res://scenes/ui_hud.tscn" type="PackedScene" id=2]
-[ext_resource path="res://scripts/Building.cs" type="Script" id=3]
+[ext_resource type="Script" uid="uid://6iy0id7mypf3" path="res://scripts/Game.cs" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/ui_hud.tscn" id="2"]
+[ext_resource type="Script" uid="uid://ddmy0vsnb7li3" path="res://scripts/Building.cs" id="3"]
 
 [node name="Game" type="Node2D"]
-script = ExtResource(1)
+script = ExtResource("1")
 HudPath = NodePath("HUD")
 SolarPath = NodePath("Solar")
 RecyclerPath = NodePath("Recycler")
 HydroponicsPath = NodePath("Hydroponics")
 
 [node name="TickTimer" type="Timer" parent="."]
-wait_time = 1.0
 autostart = true
 
-[node name="HUD" parent="." instance=ExtResource(2)]
+[node name="HUD" parent="." instance=ExtResource("2")]
+layout_mode = 3
+anchors_preset = 0
 
 [node name="Solar" type="Node" parent="."]
-script = ExtResource(3)
+script = ExtResource("3")
 
 [node name="Recycler" type="Node" parent="."]
-script = ExtResource(3)
+script = ExtResource("3")
 
 [node name="Hydroponics" type="Node" parent="."]
-script = ExtResource(3)
+script = ExtResource("3")
